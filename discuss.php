@@ -36,7 +36,7 @@
 			$sql="select * from discussions where did=\"$did\"";
 			$result=mysqli_query($conn,$sql);
 			if(mysqli_num_rows($result)==0){
-				echo "<script>alert('invalid attempt !!!');location=\"homepage.php\"</script>";
+				echo "<script>alert('invalid attempt to login !!!');location=\"homepage.php\"</script>";
 			}
 			else{
 				$sql="select topic from discussions where did=\"$did\"";
